@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preet Singh - CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #000;
+            position: relative;
+            min-height: 100vh;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            background: url('https://4kwallpapers.com/images/walls/thumbs_2t/22500.jpg') center center/cover no-repeat;
+            opacity: 0.2;
+            pointer-events: none;
+        }
+        h1, h3 {
+            color: #13f261;
+        }
+        h2, h4, h5, h6 {
+            color: #01c9e4;
+        }
+        progress {
+            width: 300px;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: #eee;
+        }
+        progress::-webkit-progress-bar {
+            background-color: #eee;
+            border-radius: 10px;
+        }
+        progress::-webkit-progress-value {
+            background-color: #03ea4c;
+            border-radius: 10px;
+        }
+        progress::-moz-progress-bar {
+            background-color: #03ea4c;
+            border-radius: 10px;
+        }
+        progress:focus {
+            outline: none;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        a {
+            color: #03ea4c;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #00ffcc;
+        }
+        table {
+            border: 1px solid #03ea4c;
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            color: #fff;
+        }
+        th, td {
+            border: 1px solid #03ea4c;
+            padding: 8px;
+        }
+        th {
+            background-color: #111;
+        }
+        .project-box {
+            border: 1px solid #03ea4c;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            background: #111;
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+        }
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #03ea4c;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .05em;
+            animation:
+                typewriter 4s steps(80, end) infinite,
+                blinkTextCursor 0.75s step-end infinite;
+            width: 40em;
+            max-width: 100%;
+        }
+        @keyframes typewriter {
+            0% { width: 0; }
+            40% { width: 40em; }
+            60% { width: 40em; }
+            100% { width: 0; }
+        }
+        @keyframes blinkTextCursor {
+            from, to { border-color: transparent; }
+            50% { border-color: #03ea4c; }
+        }
+        p {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Preet Singh</h1>
+    <h3 style="text-align:center;">Aspiring Web Developer</h3>
+    <div style="text-align:center;">
+        <img src="pic.jpg" alt="Profile Picture" style="width:150px; border-radius:50%; border:2px solid #2c3e50;">
+    </div>
+
+    <h2>Contact Information</h2>
+    <ul>
+        <li><b>Email:</b> <a href="mailto:preetraghuvanshi077@gmail.com">preetraghuvanshi077@gmail.com</a></li>
+        <li><b>Phone:</b> +91-7985980429</li>
+        <li><b>Instagram:</b> <a href="https://www.instagram.com/prt.sgh_061/" target="_blank">Instagram.com/in/preetsingh</a></li>
+    </ul>
+
+    <h2>About Me</h2>
+    <p class="typewriter">
+      Hello! I'm <b>Preet Singh</b>, <b>An enthusiastic</b> and <b>Dedicated</b> <b><u>Web Developer.
+    </p>
+
+    <h2>Education</h2>
+    <table>
+      <tr>
+        <th>Year</th>
+        <th>Degree</th>
+        <th>Institute</th>
+      </tr>
+      <tr>
+        <td>2028</td>
+        <td>B.Tech in CSE</td>
+        <td>GLA UNIVERSITY, MATHURA</td>
+      </tr>
+      <tr>
+        <td>2024</td>
+        <td>12th (Science)</td>
+        <td>ST.JOSEPH ENGLISH SCHOOL HARAUA, VARANASI</td>
+      </tr>
+    </table>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML, CSS, JavaScript <progress value="80" max="100"></progress></li>
+        <li>Python <progress value="75" max="100"></progress></li>
+        <li>C/C++ <progress value="65" max="100"></progress></li>
+    </ul>
+
+    <h2>Projects</h2>
+    <div class="project-box">
+        <h4 style="margin:0;">Portfolio Website</h4>
+        <p style="margin:0;">A personal website to showcase my projects, skills, and resume. Built with HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project-box">
+        <h4 style="margin:0;">Game Page</h4>
+        <p style="margin:0;">Developed a Gaming WebPage using HTML, CSS, JavaScript.</p>
+        <li><b>Gaming Page</b> <a href="http://127.0.0.1:5500/gaming.website/index.html">Link</a></li>
+    </div>
+
+    <h2>Hobbies</h2>
+    <ul>
+        <li>🎮 Gaming</li>
+        <li>💪🏻 Gym</li>
+        <li>💪🏻🤼 Arm Wrestling</li>
+        <li>🎵 Listening to Music</li>
+    </ul>
+
+    <footer>
+        &copy; 2025 Preet Singh
+    </footer>
+</body>
+</html>
